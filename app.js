@@ -615,11 +615,11 @@ function createItem (id, name) {
 }*/
 
 // Starting Server on local machine (For Dev)
-app.listen("8080", "127.0.0.1", function(){
-    console.log("Express server is running...");
-});
-
-// Starting Server for Web Hosting Environment 
-// app.listen(process.env.PORT, process.env.IP, function(){
+// app.listen("8080", "127.0.0.1", function(){
 //     console.log("Express server is running...");
 // });
+
+//Starting Server for Web Hosting Environment 
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("Express server is running...");
+});
